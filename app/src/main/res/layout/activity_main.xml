@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/menuLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="64dp"
+        android:text="Main Menu"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Start \nGame"
+        app:layout_constraintBottom_toTopOf="@+id/BtnScore"
+        app:layout_constraintEnd_toStartOf="@+id/BtnScore" />
+
+    <Button
+        android:id="@+id/BtnScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Score\nboard"
+        app:layout_constraintBottom_toTopOf="@+id/BtnAddPlayer"
+        app:layout_constraintStart_toStartOf="@+id/BtnAddPlayer" />
+
+    <Button
+        android:id="@+id/BtnAddPlayer"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="85dp"
+        android:text="Add \nPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="2dp"
+        android:text="Player 1 \nSelect"
+        app:layout_constraintEnd_toStartOf="@+id/BtnStart"
+        app:layout_constraintTop_toBottomOf="@+id/BtnStart" />
+
+    <Button
+        android:id="@+id/BtnP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Player 2 \nSelect"
+        app:layout_constraintStart_toStartOf="@+id/BtnP1"
+        app:layout_constraintTop_toBottomOf="@+id/BtnP1" />
+
+
+</android.support.constraint.ConstraintLayout>
